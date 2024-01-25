@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     private int collectedBoxes = 0;
     public int totalBoxes = 2; 
-    public string segundaEscenaNombre = "Second level"; 
+    public string second = "Second level"; 
 
     public static GameManager Instance
     {
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
         if (collectedBoxes >= totalBoxes)
         {
-            SceneManager.LoadScene(segundaEscenaNombre, LoadSceneMode.Additive);
+            SceneManager.LoadScene(second, LoadSceneMode.Additive);
         }
     }
 }
