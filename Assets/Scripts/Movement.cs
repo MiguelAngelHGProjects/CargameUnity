@@ -24,6 +24,11 @@ public class CarController : MonoBehaviour, ICoinCollector
         {
             ReplayGame();
         }
+
+        if (transform.position.y < -1.5)
+        {
+            ReplayGame();
+        }
     }
 
     public void CollectCoin(int value)
